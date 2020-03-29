@@ -35,6 +35,9 @@ export default function Detail() {
             Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}&text=${message}`);
         }
 
+        function sendLink(){
+            Linking.openURL(`https://abong.org.br/quem-somos/`);
+        }
 
     return(
         <View style={styles.container}>
@@ -76,6 +79,15 @@ export default function Detail() {
                     <TouchableOpacity style={styles.action} onPress={sendMail}>
                         <Text style={styles.actionText}>E-mail</Text>
                     </TouchableOpacity>
+
+                    <Text style={styles.heroDescription}>Conheça a Associação Brasileira de ONGs:</Text>    
+                    <TouchableOpacity style={styles.action} onPress={sendLink}>
+                        
+                        <Text style={styles.actionText}>Quem somos?</Text>
+                    
+                    </TouchableOpacity>
+                
+
                 </View>
             </View>
         </View>

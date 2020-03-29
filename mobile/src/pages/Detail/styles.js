@@ -33,7 +33,7 @@ export default StyleSheet.create({
     incidentValue: {
         marginTop: 8,
         fontSize: 15,
-        color: '#737380'  
+        color: '#737380',
     },
 
     contactBox: {
@@ -54,26 +54,30 @@ export default StyleSheet.create({
         fontSize: 15,
         color: '#737380',
         marginTop: 16,
+        justifyContent: 'center',
     },
 
     actions:{
-        marginTop: 16,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-    },
-
-    action:{
-        backgroundColor: '#e02041',
-        borderRadius: 8,
-        height: 50,
-        width: '48%',
+        marginTop: 10,
+        flexDirection:'column',
         justifyContent: 'center',
-        alignItems: 'center'        
+
+    },
+   
+    action:{
+        margin: 10,
+        backgroundColor: '#e02041',
+        borderRadius: 6,
+        height: 40,
+        width: '80%',
+        justifyContent: 'center',
+        alignItems: 'center',
+
     },
 
     actionText: {
         color: '#FFF',
         fontSize: 15,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
 });
