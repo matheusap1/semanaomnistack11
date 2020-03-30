@@ -22,9 +22,19 @@ module.exports = {
             whatsapp,
             city,
             uf,
-        })
+        });
     
         return response.json({ id });
 
+    },
+   
+    async delete(request, response){
+
+        const { id } = request.params;
+   
+        const ongs = await connection('ongs')
+            .where('id', id);
+ 
+        await connection('ongs').where('id', id).delete();
     }
 };
